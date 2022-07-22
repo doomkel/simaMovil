@@ -1,0 +1,13 @@
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\bin\Debug\netstandard2.0\simaMovil.deps.json
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\bin\Debug\netstandard2.0\simaMovil.dll
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\bin\Debug\netstandard2.0\simaMovil.pdb
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.csprojAssemblyReference.cache
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.csproj.CoreCompileInputs.cache
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.AssemblyInfoInputs.cache
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.AssemblyInfo.cs
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.dll
+C:\Users\Dan\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.pdb

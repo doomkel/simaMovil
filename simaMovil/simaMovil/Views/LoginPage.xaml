@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="simaMovil.Views.LoginPage">
+      
+    
+    
+    <StackLayout x:Name="MasterLayout">
+
+        <StackLayout x:Name="LogosStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIcon" Source="logo_sima2.jpg" Margin="0,40,0,0" />
+        </StackLayout>
+
+
+        <StackLayout x:Name="LoginEntries" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness" Phone="10, 10, 10, 10">
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="True" />
+
+            <Label x:Name="lblUser" Text="Usuario" />
+            <StackLayout BackgroundColor="LightBlue" Padding="1">
+                <Entry x:Name="entUser" Placeholder="Username" Completed="EntUser_Completed" />
+            </StackLayout>
+            <Label x:Name="lblPass" Text="Password" />
+            <StackLayout BackgroundColor="LightBlue" Padding="1">
+                <Entry x:Name="entPass" Placeholder="Password" Completed="EntPass_Completed" IsPassword="True" />
+            </StackLayout>
+            <Button x:Name="btnEntrar" Text="Entrar" Clicked="BtnEntrar_Clicked" />
+        </StackLayout>
+
+    </StackLayout>
+    
+</ContentPage>

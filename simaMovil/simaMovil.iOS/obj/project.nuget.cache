@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "MoHc5JO3TCa7rNDp132SzRjjOt3pDN+a371iBMv3yiPPRToAVL+HPaO/gWOsNCKxbDZINCNkUS+9f+pzNQH/4g==",
+  "dgSpecHash": "9Qf7h9Cvl+wMtt7iLmiSI7VpmN0niFJye9T9PtfpRWwRJHVNPgW9Krv8Bliwx334QP6UxhtbFK3dRtehcHk2vg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dan\\source\\repos\\simaMovil\\simaMovil\\simaMovil.iOS\\simaMovil.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil.iOS\\simaMovil.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dan\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\Dan\\.nuget\\packages\\xamarin.forms\\3.4.0.1008975\\xamarin.forms.3.4.0.1008975.nupkg.sha512"
+    "C:\\Users\\Administrador\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512"
   ],
   "logs": []
 }

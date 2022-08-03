@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\5.0.0.2515\buildTransitive\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\5.0.0.2515\buildTransitive\Xamarin.Forms.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.annotations\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.annotations\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Annotations.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.arch.lifecycle.common\1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.arch.lifecycle.common\1.0.3.1\build\MonoAndroid80\Xamarin.Android.Arch.Lifecycle.Common.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.arch.core.common\1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.arch.core.common\1.0.0.1\build\MonoAndroid80\Xamarin.Android.Arch.Core.Common.targets')" />
@@ -20,6 +21,5 @@
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.v4\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v4.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.v4\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.v4.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.transition\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Transition.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.transition\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Transition.targets')" />
     <Import Project="$(NuGetPackageRoot)xamarin.android.support.design\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Design.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.android.support.design\27.0.2.1\build\MonoAndroid81\Xamarin.Android.Support.Design.targets')" />
-    <Import Project="$(NuGetPackageRoot)xamarin.forms\3.4.0.1008975\build\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\3.4.0.1008975\build\Xamarin.Forms.targets')" />
   </ImportGroup>
 </Project>

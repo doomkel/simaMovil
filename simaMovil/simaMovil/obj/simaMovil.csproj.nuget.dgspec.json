@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dan\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj": {}
+    "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dan\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj": {
+    "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dan\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj",
         "projectName": "simaMovil",
-        "projectPath": "C:\\Users\\Dan\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj",
-        "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dan\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +52,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[3.4.0.1008975, )"
+              "version": "[5.0.0.2515, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

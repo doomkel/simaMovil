@@ -74,15 +74,15 @@ namespace simaMovil.Views
 
             };
 
-                var request = new HttpRequestMessage(HttpMethod.Get, "https://10.0.0.8:44368/api/remisiones");
+                var request = new HttpRequestMessage(HttpMethod.Get, "https://192.168.0.127:44392/api/remisiones");
 
                 //request.Content = new FormUrlEncodedContent(keyValues);
                 //request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
 
-                var client = new HttpClient(new System.Net.Http.HttpClientHandler());
+                var client = new HttpClient(Xamarin.Forms.DependencyService.Get<IMyOwnNetService>().GetHttpClientHandler());
 
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaW1hU2VydmljZUFjY2Vzc1Rva2VuIiwianRpIjoiMmI5ZWY1ZWYtMmRhYS00NmZhLWFjZDItNTkzODE1NmI3NzI5IiwiaWF0IjoiMTIvMDYvMjAyMCAwNDo1MjozOSBwLiBtLiIsIkNvZFVzdWFyaW8iOiIxIiwiVXN1YXJpbyI6ImR2YXpxdWV6IiwiUGVyZmlsIjoiMSIsIlRpZW5kYUJhc2UiOiIxIiwiZXhwIjoxNTkyMDY3MTU5LCJpc3MiOiJzaW1hQXV0aGVudGljYXRpb25TZXJ2ZXIiLCJhdWQiOiJzaW1hU2VydmljZVBvc3RtYW5DbGllbnQifQ.2v-GMUtRsBADm9O2yHlN5P-yeAowU60SD7UROeG3Y5U");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaW1hU2VydmljZUFjY2Vzc1Rva2VuIiwianRpIjoiY2I3YTIwZTUtYmU5OS00OGRmLWIzNjMtMjUwYzMwZmFkYTY1IiwiaWF0IjoiMTEvMDgvMjAyMiAwNjoxOTo0NSBwLiBtLiIsIkNvZF91c3VhcmlvIjoiMSIsIlVzdWFyaW8iOiJkdmF6cXVleiIsIlBlcmZpbCI6IjEiLCJleHAiOjE2NjAzMjgzODYsImlzcyI6InNpbWFBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6InNpbWFTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.lHbxM2jNkD18b3D5uUYYA57Xu_jALqW-cE3NgNEWLbE");
 
                 HttpResponseMessage response = await client.SendAsync(request);
                 //var response = client.SendAsync(request);

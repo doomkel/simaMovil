@@ -13,6 +13,7 @@ androidx.coordinatorlayout.widget.CoordinatorLayout;C:\Users\Administrador\sourc
 attr;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\values\attrs.xml
 background;obj\Debug\100\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\100\res\mipmap-anydpi-v26\icon_round.xml
+certificates;obj\Debug\100\res\xml\network_security_config.xml
 color;obj\Debug\100\res\values\colors.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\flyoutcontent.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\rootlayout.xml
@@ -22,13 +23,19 @@ com.google.android.material.tabs.TabLayout;C:\Users\Administrador\source\repos\s
 com.google.android.material.tabs.TabLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\tabbar.xml
 com.google.android.material.tabs.TabLayout;obj\Debug\100\res\layout\tabbar.xml
+crc643f46942d9dd1fff9.ShellFlyoutLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\flyoutcontent.xml
+crc64720bb2db43a66fe9.FormsViewPager;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\rootlayout.xml
+debug-overrides;obj\Debug\100\res\xml\network_security_config.xml
 declare-styleable;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\values\attrs.xml
+domain;obj\Debug\100\res\xml\network_security_config.xml
+domain-config;obj\Debug\100\res\xml\network_security_config.xml
 foreground;obj\Debug\100\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\100\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\bottomtablayout.xml
 item;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\values\styles.xml
 item;obj\Debug\100\res\values\styles.xml
 LinearLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\bottomtablayout.xml
+network-security-config;obj\Debug\100\res\xml\network_security_config.xml
 resources;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\values\attrs.xml
 resources;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\values\strings.xml
 resources;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\values\styles.xml
@@ -45,5 +52,6 @@ translate;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Andr
 translate;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\anim\enterfromright.xml
 translate;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\anim\exittoleft.xml
 translate;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\anim\exittoright.xml
+trust-anchors;obj\Debug\100\res\xml\network_security_config.xml
 xamarin.forms.platform.android.appcompat.FormsViewPager;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\rootlayout.xml
 xamarin.forms.platform.android.ShellFlyoutLayout;C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\lp\56\jl\res\layout\flyoutcontent.xml

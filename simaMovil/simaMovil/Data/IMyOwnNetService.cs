@@ -9,4 +9,6 @@ namespace simaMovil.Data
     {
         HttpClientHandler GetHttpClientHandler();
     }
+
+
 }

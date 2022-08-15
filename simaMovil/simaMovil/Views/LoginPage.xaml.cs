@@ -11,6 +11,7 @@ using simaMovil.Models;
 using simaMovil.Data;
 using System.Net.Http.Headers;
 
+
 namespace simaMovil.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -79,10 +80,20 @@ namespace simaMovil.Views
                 //request.Content = new FormUrlEncodedContent(keyValues);
                 //request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
+#if DEBUG
+                HttpClientHandler insecureHandler = GetInsecureHandler();
+                HttpClient client = new HttpClient(insecureHandler);
+#else
+HttpClient client = new HttpClient();
+#endif
 
-                var client = new HttpClient(Xamarin.Forms.DependencyService.Get<IMyOwnNetService>().GetHttpClientHandler());
 
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaW1hU2VydmljZUFjY2Vzc1Rva2VuIiwianRpIjoiY2I3YTIwZTUtYmU5OS00OGRmLWIzNjMtMjUwYzMwZmFkYTY1IiwiaWF0IjoiMTEvMDgvMjAyMiAwNjoxOTo0NSBwLiBtLiIsIkNvZF91c3VhcmlvIjoiMSIsIlVzdWFyaW8iOiJkdmF6cXVleiIsIlBlcmZpbCI6IjEiLCJleHAiOjE2NjAzMjgzODYsImlzcyI6InNpbWFBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6InNpbWFTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.lHbxM2jNkD18b3D5uUYYA57Xu_jALqW-cE3NgNEWLbE");
+
+
+
+                
+
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaW1hU2VydmljZUFjY2Vzc1Rva2VuIiwianRpIjoiNDc4MDc2YTYtMGMxMS00MDJiLWIxYTQtMTI2NjFlY2NiOTYzIiwiaWF0IjoiMTUvMDgvMjAyMiAwOTozMjo0OSBwLiBtLiIsIkNvZF91c3VhcmlvIjoiMSIsIlVzdWFyaW8iOiJkdmF6cXVleiIsIlBlcmZpbCI6IjEiLCJleHAiOjE2NjA2ODU1NjksImlzcyI6InNpbWFBdXRoZW50aWNhdGlvblNlcnZlciIsImF1ZCI6InNpbWFTZXJ2aWNlUG9zdG1hbkNsaWVudCJ9.KUTm3fcjquklUO-_1QgqZ31N_sgCYMRywTqZZ72PfIA");
 
                 HttpResponseMessage response = await client.SendAsync(request);
                 //var response = client.SendAsync(request);
@@ -114,6 +125,18 @@ namespace simaMovil.Views
         private void EntPass_Completed(object sender, EventArgs e)
         {
             btnEntrar.Focus();
+        }
+
+        public HttpClientHandler GetInsecureHandler()
+        {
+            HttpClientHandler handler = new HttpClientHandler();
+            handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
+            {
+                if (cert.Issuer.Equals("CN=localhost"))
+                    return true;
+                return errors == System.Net.Security.SslPolicyErrors.None;
+            };
+            return handler;
         }
     }
 }

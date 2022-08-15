@@ -682,3 +682,4 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\De
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\androidx\proguard\b0d77534-d07e-4b30-9326-b0a072dd57b3.txt
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\androidx\proguard\cd46d068-848e-4f70-9b36-6b7a5a5d7268.txt
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\androidx\proguard\dc94a900-87b5-4c1b-92c3-18bb2ea7cb46.txt
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\xml\network_security_config.xml

@@ -488,6 +488,22 @@ app_system_properties:
 .L.env.buf.112:
 	.zero	65
 	.size	.L.env.buf.112, 65
+	.type	.L.env.buf.113, @object
+.L.env.buf.113:
+	.zero	65
+	.size	.L.env.buf.113, 65
+	.type	.L.env.buf.114, @object
+.L.env.buf.114:
+	.zero	65
+	.size	.L.env.buf.114, 65
+	.type	.L.env.buf.115, @object
+.L.env.buf.115:
+	.zero	65
+	.size	.L.env.buf.115, 65
+	.type	.L.env.buf.116, @object
+.L.env.buf.116:
+	.zero	65
+	.size	.L.env.buf.116, 65
 	# Bundled assemblies data
 
 	.type	bundled_assemblies, @object
@@ -1287,7 +1303,35 @@ bundled_assemblies:
 	.long	0x0	# name_length
 	.long	.L.env.buf.112	# name
 
-	.size	bundled_assemblies, 2712
+	.long	0xffffffff	# apk_fd
+	.long	0x0	# data_offset
+	.long	0x0	# data_size
+	.long	0x0	# data
+	.long	0x0	# name_length
+	.long	.L.env.buf.113	# name
+
+	.long	0xffffffff	# apk_fd
+	.long	0x0	# data_offset
+	.long	0x0	# data_size
+	.long	0x0	# data
+	.long	0x0	# name_length
+	.long	.L.env.buf.114	# name
+
+	.long	0xffffffff	# apk_fd
+	.long	0x0	# data_offset
+	.long	0x0	# data_size
+	.long	0x0	# data
+	.long	0x0	# name_length
+	.long	.L.env.buf.115	# name
+
+	.long	0xffffffff	# apk_fd
+	.long	0x0	# data_offset
+	.long	0x0	# data_size
+	.long	0x0	# data
+	.long	0x0	# name_length
+	.long	.L.env.buf.116	# name
+
+	.size	bundled_assemblies, 2808
 	# Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, @object
 	.global	assembly_store_bundled_assemblies
@@ -1522,7 +1566,7 @@ application_config:
 	.long	0x3	# package_naming_policy
 	.long	0xc	# environment_variable_count
 	.long	0x0	# system_property_count
-	.long	0x71	# number_of_assemblies_in_apk
+	.long	0x75	# number_of_assemblies_in_apk
 	.long	0x41	# bundled_assembly_name_width
 	.long	0x2	# number_of_assembly_store_files
 	.long	0x20	# number_of_dso_cache_entries
@@ -1564,7 +1608,7 @@ application_config:
 
 	.type	.L.autostr.6, @object
 .L.autostr.6:
-	.asciz	"6b3f962c-406a-4815-8c61-b99604b402a2"
+	.asciz	"5968e5a6-75f8-4dce-af00-1b65195c201c"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, @object

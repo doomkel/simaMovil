@@ -1,4 +1,4 @@
-﻿using SQLite;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,21 +7,21 @@ namespace simaMovil.Models
 {
     public class User
     {
-        [PrimaryKey]
+        
         public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string Usuario { get; set; }
+        public string Clave { get; set; }
 
         public User() { }
-        public User(string Username, string Password)
+        public User(string Usuario, string Clave)
         {
-            this.Username = Username;
-            this.Password = Password;
+            this.Usuario = Usuario;
+            this.Clave = Clave;
         }
 
         public bool CheckInformation()
         {
-            if (!this.Username.Equals("") && !this.Password.Equals(""))
+            if (!this.Usuario.Equals("") && !this.Clave.Equals(""))
             {
                 return true;
             }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4g57huntTFqTHNiN8425ND+bb+MP7yvIWg93U/FB1FUoYkT3lfQp/1TjLsWJd3W9ledvAGxfkA9UVfPdpNY3tg==",
+  "dgSpecHash": "36zU0sXflCNFRXKebXyHt+YJoomhKKzYxnycH1AiPhhcVbyCggBPdbLmdTS2mCvTBPMe0BqRkW0aYOcKJCgSAA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

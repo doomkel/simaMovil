@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Acr.UserDialogs;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -15,6 +15,8 @@ namespace simaMovil.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            UserDialogs.Init(activity:this);
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

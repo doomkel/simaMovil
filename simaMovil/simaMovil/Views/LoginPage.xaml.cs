@@ -10,6 +10,7 @@ using System.Text.Json;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using Acr.UserDialogs;
 using simaMovil.Models;
 using simaMovil.Data;
 
@@ -49,18 +50,19 @@ namespace simaMovil.Views
         {
             User user = new User(entUser.Text, entPass.Text);
 
-            
 
+            UserDialogs.Instance.ShowLoading(title: "Autenticando");
             var result = await CheckInformation(user);
-
+            UserDialogs.Instance.HideLoading();
+                        
             if (result == true)
             {
-                await DisplayAlert("Login", "Login Success", "Ok");
-                //App.UserDatabase.SaveUser(user);
+                await DisplayAlert("Login", "OK", "Ok");
+                
             }
             else
             {
-                await DisplayAlert("Login", "Login Not Correct", "Ok");
+                await DisplayAlert("Login", "Usuario o contraseña incorrecta", "Ok");
             }
         }
 

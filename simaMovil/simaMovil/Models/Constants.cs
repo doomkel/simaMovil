@@ -7,6 +7,12 @@ namespace simaMovil.Models
 {
     public class Constants
     {
+#if DEBUG
+        public static string ApiUrl = "https://10.0.0.2/api";
+#else
+public static string ApiUrl = "https://SERVIDORWEB/api";
+#endif 
+
         public static bool IsDev = true;
 
         public static Color BackGroundColor = Color.Black;

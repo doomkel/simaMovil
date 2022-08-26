@@ -8,7 +8,7 @@ namespace simaMovil.Models
     public class User
     {
         
-        public int Id { get; set; }
+        //public int Id { get; set; }
         public string Usuario { get; set; }
         public string Clave { get; set; }
 

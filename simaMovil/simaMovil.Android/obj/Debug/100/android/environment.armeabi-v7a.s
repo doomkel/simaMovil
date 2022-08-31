@@ -537,6 +537,34 @@ app_system_properties:
 .L.env.buf.119:
 	.zero	65
 	.size	.L.env.buf.119, 65
+	.type	.L.env.buf.120, %object
+.L.env.buf.120:
+	.zero	65
+	.size	.L.env.buf.120, 65
+	.type	.L.env.buf.121, %object
+.L.env.buf.121:
+	.zero	65
+	.size	.L.env.buf.121, 65
+	.type	.L.env.buf.122, %object
+.L.env.buf.122:
+	.zero	65
+	.size	.L.env.buf.122, 65
+	.type	.L.env.buf.123, %object
+.L.env.buf.123:
+	.zero	65
+	.size	.L.env.buf.123, 65
+	.type	.L.env.buf.124, %object
+.L.env.buf.124:
+	.zero	65
+	.size	.L.env.buf.124, 65
+	.type	.L.env.buf.125, %object
+.L.env.buf.125:
+	.zero	65
+	.size	.L.env.buf.125, 65
+	.type	.L.env.buf.126, %object
+.L.env.buf.126:
+	.zero	65
+	.size	.L.env.buf.126, 65
 	@ Bundled assemblies data
 
 	.type	bundled_assemblies, %object
@@ -1385,7 +1413,56 @@ bundled_assemblies:
 	.long	0x0	@ name_length
 	.long	.L.env.buf.119	@ name
 
-	.size	bundled_assemblies, 2880
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.120	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.121	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.122	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.123	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.124	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.125	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.126	@ name
+
+	.size	bundled_assemblies, 3048
 	@ Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, %object
 	.global	assembly_store_bundled_assemblies
@@ -1684,7 +1761,7 @@ application_config:
 	.long	0x3	@ package_naming_policy
 	.long	0xc	@ environment_variable_count
 	.long	0x0	@ system_property_count
-	.long	0x78	@ number_of_assemblies_in_apk
+	.long	0x7f	@ number_of_assemblies_in_apk
 	.long	0x41	@ bundled_assembly_name_width
 	.long	0x2	@ number_of_assembly_store_files
 	.long	0x20	@ number_of_dso_cache_entries
@@ -1726,7 +1803,7 @@ application_config:
 
 	.type	.L.autostr.6, %object
 .L.autostr.6:
-	.asciz	"43030eb9-d7dd-4b39-8fa4-9f6442aa715d"
+	.asciz	"cd5dde42-5db5-4dc2-acd7-f7b3baba63af"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, %object

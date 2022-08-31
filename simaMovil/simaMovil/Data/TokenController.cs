@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.IdentityModel.Tokens.Jwt;
 using simaMovil.Models;
 using simaMovil.Repository;
 using Xamarin.Essentials;
@@ -42,6 +43,11 @@ HttpClient client = new HttpClient();
                 HttpResponseMessage response = await client.SendAsync(request);
                 string tokenText = await response.Content.ReadAsStringAsync();
                 await SecureStorage.SetAsync("token", tokenText);
+                
+                var jwtToken = new JwtSecurityToken(tokenText);
+                var validToToken = jwtToken.ValidTo.ToLongTimeString();
+                await SecureStorage.SetAsync("tokenExpiration", validToToken);
+
 
                 Token token = new Token()
                 {

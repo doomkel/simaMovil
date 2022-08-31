@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[7.2.0.564, )"
             },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.1, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2515, )"
@@ -118,6 +122,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.1, )"
             },
             "System.Text.Json": {
               "target": "Package",

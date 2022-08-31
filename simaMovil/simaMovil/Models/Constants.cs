@@ -8,10 +8,13 @@ namespace simaMovil.Models
     public class Constants
     {
 #if DEBUG
-        public static string ApiUrl = "https://10.0.0.2/api";
+        public static string DefaultApiUrl = "https://10.0.2.2:44392/api/";
 #else
 public static string ApiUrl = "https://SERVIDORWEB/api";
 #endif 
+
+        public static string ContentType = "application/json";
+        public static string TokenType = "Bearer";
 
         public static bool IsDev = true;
 

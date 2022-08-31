@@ -8,6 +8,6 @@ namespace simaMovil.Repository
 {
     internal interface ITokenController
     {
-        Task<Token> GetTokenAsync(string _uri, User _user);
+        Task<bool> GetTokenAsync(string _uri, User _user);
     }
 }

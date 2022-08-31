@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
 using System.Text.Json;
+using simaMovil.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
@@ -17,15 +18,16 @@ using simaMovil.Data;
 
 namespace simaMovil.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LoginPage : ContentPage
-	{
-		public LoginPage ()
-		{
-            
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class LoginPage : ContentPage
+    {
+        private readonly IHttpClientFactory _httpClientFactory;
+        public LoginPage()
+        {
+
+            InitializeComponent();
             Init();
-		}
+        }
 
         void Init()
         {
@@ -54,11 +56,12 @@ namespace simaMovil.Views
             UserDialogs.Instance.ShowLoading(title: "Autenticando");
             var result = await CheckInformation(user);
             UserDialogs.Instance.HideLoading();
-                        
+
             if (result == true)
             {
-                await DisplayAlert("Login", "OK", "Ok");
-                
+                // await Navigation.PushAsync(new MainPage());
+                await DisplayAlert("Login", "Correcto", "Ok");
+
             }
             else
             {
@@ -71,26 +74,21 @@ namespace simaMovil.Views
         {
             try
             {
-                TokenController tokenController = new TokenController();
+                TokenController tokenController = new TokenController(_httpClientFactory);
                 User user = new User
                 {
                     Usuario = entUser.Text,
                     Clave = entPass.Text
                 };
 
-                Token token = await tokenController.GetTokenAsync(Constants.ApiUrl, user);
+                Console.WriteLine(await SecureStorage.GetAsync("token"));
 
-
-                if (token == null)
-                {
-                    return false;
-                }
-                return true;
+                return await tokenController.GetTokenAsync(Constants.DefaultApiUrl, user);
 
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                Console.WriteLine(ex);
                 return false;
             }
 
@@ -106,16 +104,6 @@ namespace simaMovil.Views
             btnEntrar.Focus();
         }
 
-        public HttpClientHandler GetInsecureHandler()
-        {
-            HttpClientHandler handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
-            {
-                if (cert.Issuer.Equals("CN=localhost"))
-                    return true;
-                return errors == System.Net.Security.SslPolicyErrors.None;
-            };
-            return handler;
-        }
     }
+    
 }

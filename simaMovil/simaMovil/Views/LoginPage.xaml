@@ -16,9 +16,7 @@
             <StackLayout.Padding>
                 <OnIdiom x:TypeArguments="Thickness" Phone="10, 10, 10, 10">
                 </OnIdiom>
-            </StackLayout.Padding>
-
-            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="True" />
+            </StackLayout.Padding>            
 
             <Label x:Name="lblUser" Text="Usuario" />
             <StackLayout BackgroundColor="LightBlue" Padding="1">

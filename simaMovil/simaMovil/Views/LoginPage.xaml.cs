@@ -38,9 +38,7 @@ namespace simaMovil.Views
             entUser.BackgroundColor = Color.Black;
             entPass.BackgroundColor = Color.Black;
             btnEntrar.BackgroundColor = Constants.MainTextColor;
-
-
-            ActivitySpinner.IsVisible = false;
+                                    
             LoginIcon.HeightRequest = 120;
 
             entUser.Focus();
@@ -78,14 +76,7 @@ namespace simaMovil.Views
                     Clave = entPass.Text
                 };
 
-                Token token = await tokenController.GetTokenAsync(Constants.ApiUrl, user);
-
-
-                if (token == null)
-                {
-                    return false;
-                }
-                return true;
+                return await tokenController.GetTokenAsync(Constants.ApiUrl, user);
 
             }
             catch (Exception ex)
@@ -106,16 +97,6 @@ namespace simaMovil.Views
             btnEntrar.Focus();
         }
 
-        public HttpClientHandler GetInsecureHandler()
-        {
-            HttpClientHandler handler = new HttpClientHandler();
-            handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) =>
-            {
-                if (cert.Issuer.Equals("CN=localhost"))
-                    return true;
-                return errors == System.Net.Security.SslPolicyErrors.None;
-            };
-            return handler;
-        }
+   
     }
 }

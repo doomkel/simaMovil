@@ -7,14 +7,13 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
 using simaMovil.Models;
-using simaMovil.Repository;
 using Xamarin.Essentials;
 
 namespace simaMovil.Data
 {
-    internal class TokenController :  ITokenController
+    internal class TokenController
     {
-        public async Task<Token> GetTokenAsync(string _uri, User _user)
+        public async Task<bool> GetTokenAsync(string _uri, User _user)
         {
             try
             {
@@ -23,12 +22,12 @@ namespace simaMovil.Data
 
                 var connectionUrl = _uri;
 
-                var content = new StringContent(jsonUserInfo, Encoding.UTF8, "application/json");
-                content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                var content = new StringContent(jsonUserInfo, Encoding.UTF8, Constants.ContentType);
+                content.Headers.ContentType = new MediaTypeHeaderValue(Constants.ContentType);
 
-                var request = new HttpRequestMessage(HttpMethod.Post, connectionUrl);
+                var request = new HttpRequestMessage(HttpMethod.Post, _uri + "token");
                 request.Content = content;
-                request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                request.Content.Headers.ContentType = new MediaTypeHeaderValue(Constants.ContentType);
 
 #if DEBUG
                                 
@@ -42,26 +41,24 @@ HttpClient client = new HttpClient();
 
                 HttpResponseMessage response = await client.SendAsync(request);
                 string tokenText = await response.Content.ReadAsStringAsync();
-                await SecureStorage.SetAsync("token", tokenText);
-                
-                var jwtToken = new JwtSecurityToken(tokenText);
-                var validToToken = jwtToken.ValidTo.ToLongTimeString();
-                await SecureStorage.SetAsync("tokenExpiration", validToToken);
 
-
-                Token token = new Token()
+                if (response.IsSuccessStatusCode)
                 {
-                    TokenText = tokenText,
-                    Type = "",
-                    Expiration = DateTime.Now
-                };
+                    await SecureStorage.SetAsync("token", tokenText);
 
-                return token;
+                    var jwtToken = new JwtSecurityToken(tokenText);
+                    var validToToken = jwtToken.ValidTo.ToLocalTime().ToString(); 
+                    await SecureStorage.SetAsync("tokenExpiration", validToToken);
+                    
+                }
+                
+                return true;
 
             }
-            catch 
+            catch (Exception ex)
             {
-                return null;
+                Console.WriteLine(ex.Message);
+                return false;
             }
         }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
-namespace simaMovil.Data
+namespace simaMovil.Services
 {
     internal class InsecureHandler
     {

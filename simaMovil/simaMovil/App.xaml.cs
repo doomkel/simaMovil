@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using simaMovil.Views;
-using simaMovil.Data;
+
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace simaMovil

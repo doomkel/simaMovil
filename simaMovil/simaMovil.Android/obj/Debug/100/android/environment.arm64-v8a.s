@@ -1974,7 +1974,7 @@ application_config:
 
 	.type	.L.autostr.6, @object
 .L.autostr.6:
-	.asciz	"7e93ff04-1870-4ee4-957f-1442828c1cb5"
+	.asciz	"960d52ad-1123-4994-a666-4ef916bdc392"
 	.size	.L.autostr.6, 37
 
 	.type	.L.autostr.7, @object

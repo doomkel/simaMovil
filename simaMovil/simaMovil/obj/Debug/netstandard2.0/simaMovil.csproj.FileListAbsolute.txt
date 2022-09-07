@@ -17,8 +17,8 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\bin\Debug\nets
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.csproj.AssemblyReference.cache
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.AssemblyInfoInputs.cache
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.AssemblyInfo.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.csproj.CoreCompileInputs.cache

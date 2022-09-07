@@ -9,11 +9,11 @@ using System.IdentityModel.Tokens.Jwt;
 using simaMovil.Models;
 using Xamarin.Essentials;
 
-namespace simaMovil.Data
+namespace simaMovil.Services
 {
     internal class TokenController
     {
-        public async Task<bool> GetTokenAsync(string _uri, User _user)
+        public async Task<bool> GetTokenAsync(string _uri, UserModel _user)
         {
             try
             {

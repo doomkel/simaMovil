@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using Acr.UserDialogs;
 using simaMovil.Models;
-using simaMovil.Data;
+using simaMovil.Services;
 
 
 namespace simaMovil.Views
@@ -23,7 +23,7 @@ namespace simaMovil.Views
 		public LoginPage ()
 		{
             
-			InitializeComponent ();
+			InitializeComponent();
             Init();
 		}
 
@@ -46,7 +46,7 @@ namespace simaMovil.Views
 
         private async void BtnEntrar_Clicked(object sender, EventArgs e)
         {
-            User user = new User(entUser.Text, entPass.Text);
+            UserModel user = new UserModel(entUser.Text, entPass.Text);
 
 
             UserDialogs.Instance.ShowLoading(title: "Autenticando");
@@ -65,18 +65,21 @@ namespace simaMovil.Views
         }
 
 
-        public async Task<bool> CheckInformation(User _user)
+        public async Task<bool> CheckInformation(UserModel _user)
         {
             try
             {
-                TokenController tokenController = new TokenController();
-                User user = new User
+                //TokenController tokenController = new TokenController();
+                RestService restService = new RestService();
+
+                UserModel user = new UserModel
                 {
-                    Usuario = entUser.Text,
-                    Clave = entPass.Text
+                    Usuario = _user.Usuario,
+                    Clave = _user.Clave
                 };
 
-                return await tokenController.GetTokenAsync(Constants.ApiUrl, user);
+                HttpResponseMessage reponse = await restService.PostAsync(user, "token");
+                return reponse.IsSuccessStatusCode;
 
             }
             catch (Exception ex)

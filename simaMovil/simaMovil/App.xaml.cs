@@ -2,25 +2,30 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using simaMovil.Views;
-
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using simaMovil.Services;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace simaMovil
 {
     public partial class App : Application
     {
+        public static IServiceProvider ServiceProvider { get; set; }
+
         public App()
         {
             InitializeComponent();
-
+            Startup.Init();
             MainPage = new LoginPage();
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // Handle when your app starts                      
+            
         }
-
+        
         protected override void OnSleep()
         {
             // Handle when your app sleeps

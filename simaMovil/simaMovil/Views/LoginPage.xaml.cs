@@ -12,7 +12,8 @@ using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
 using Acr.UserDialogs;
 using simaMovil.Models;
-using simaMovil.Services;
+using simaMovil.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 
 
 namespace simaMovil.Views
@@ -20,12 +21,13 @@ namespace simaMovil.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LoginPage : ContentPage
 	{
-		public LoginPage ()
+        public LoginPage()
 		{
             
 			InitializeComponent();
             Init();
-		}
+            BindingContext = ActivatorUtilities.CreateInstance<LoginViewModel>(Startup.ServiceProvider);
+        }
 
         void Init()
         {
@@ -45,12 +47,11 @@ namespace simaMovil.Views
         }
 
         private async void BtnEntrar_Clicked(object sender, EventArgs e)
-        {
-            UserModel user = new UserModel(entUser.Text, entPass.Text);
-
-
+        {            
+            UserModel user = new UserModel(entUser.Text, entPass.Text);                 
+            
             UserDialogs.Instance.ShowLoading(title: "Autenticando");
-            var result = await CheckInformation(user);
+            var result = await ((LoginViewModel)BindingContext).CheckInformation(user);
             UserDialogs.Instance.HideLoading();
                         
             if (result == true)
@@ -64,31 +65,7 @@ namespace simaMovil.Views
             }
         }
 
-
-        public async Task<bool> CheckInformation(UserModel _user)
-        {
-            try
-            {
-                //TokenController tokenController = new TokenController();
-                RestService restService = new RestService();
-
-                UserModel user = new UserModel
-                {
-                    Usuario = _user.Usuario,
-                    Clave = _user.Clave
-                };
-
-                HttpResponseMessage reponse = await restService.PostAsync(user, "token");
-                return reponse.IsSuccessStatusCode;
-
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-                return false;
-            }
-
-        }
+             
 
         private void EntUser_Completed(object sender, EventArgs e)
         {

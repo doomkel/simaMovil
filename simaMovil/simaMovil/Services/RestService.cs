@@ -11,7 +11,7 @@ using Xamarin.Essentials;
 
 namespace simaMovil.Services
 {
-    internal class RestService : IRestService<object>
+    internal class RestService : IRestService
     {
         
         public async Task<IEnumerable<object>> GetAllAsync()

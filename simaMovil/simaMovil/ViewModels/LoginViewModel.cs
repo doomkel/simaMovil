@@ -7,42 +7,59 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Diagnostics;
 using Xamarin.Essentials;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace simaMovil.ViewModels
 {
-    internal class LoginViewModel
+    internal class LoginViewModel : UserModel
     {
+        
         private readonly IRestService _restService;
-        public LoginViewModel(IRestService restService)
+        private readonly IMessageService _messageService;
+        public LoginViewModel(IRestService restService, IMessageService messageService)
         {
             _restService = restService;
+            _messageService = messageService;
+
+            SaveCommand = new Command(async () => await CheckInformation()); 
         }
 
-        public async Task<bool> CheckInformation(UserModel _user)
+        public ICommand SaveCommand { get; set; }
+
+        public async Task CheckInformation()
         {
             try
             {
-                HttpResponseMessage response = await _restService.PostAsync(_user, "/token");
+                IsBusy = true;
+
+                //TODO:ACR.SHOWDIALOGS https://social.msdn.microsoft.com/Forums/en-US/443f5ce9-14d3-48ab-a5fb-8a0d2c75563f/acr-user-dialogs-not-working-on-viewmodel?forum=xamarinforms
+
+                HttpResponseMessage response = await _restService.PostAsync(this, "/token");
                 
                 if (response.IsSuccessStatusCode)
                 {
                     string token = await response.Content.ReadAsStringAsync();
                     Debug.WriteLine(token);
                     await SecureStorage.SetAsync("tokenExpiration", token);
-                    return true;
+                    await Shell.Current.GoToAsync("//main");
                 }
                 else
                 {
-                    return false;
+                    await _messageService.ShowAsync("Usuario o contraseña incorrecta");                    
                 }
 
-                
+
 
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
-                return false;
+                
+            }
+            finally
+            {
+                IsBusy = false;
             }
 
         }

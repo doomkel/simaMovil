@@ -17,7 +17,7 @@ namespace simaMovil
         {
             InitializeComponent();
             Startup.Init();
-            MainPage = new LoginPage();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

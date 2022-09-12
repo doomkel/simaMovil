@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("simaMovil.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::simaMovil.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("simaMovil.Page1.xaml", "Page1.xaml", typeof(global::simaMovil.Page1))]
 
 namespace simaMovil {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MainPage.xaml")]
-    public partial class MainPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Page1.xaml")]
+    public partial class Page1 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
         }
     }
 }

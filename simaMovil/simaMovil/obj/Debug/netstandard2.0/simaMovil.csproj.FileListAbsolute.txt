@@ -18,10 +18,11 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\nets
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.AssemblyInfoInputs.cache
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.AssemblyInfo.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.dll
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.pdb
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\OrdersPage.xaml.g.cs

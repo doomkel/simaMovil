@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[7.2.0.564, )"
             },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"

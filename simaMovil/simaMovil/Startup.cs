@@ -37,6 +37,7 @@ namespace simaMovil
         static void ConfigureServices(HostBuilderContext ctx, IServiceCollection services)
         {
             services.AddSingleton<IRestService, RestService>();
+            services.AddSingleton<IMessageService, MessageService>();
         }
 
     }

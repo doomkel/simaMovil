@@ -22,8 +22,7 @@ namespace simaMovil.Views
 	public partial class LoginPage : ContentPage
 	{
         public LoginPage()
-		{
-            
+		{            
 			InitializeComponent();
             Init();
             BindingContext = ActivatorUtilities.CreateInstance<LoginViewModel>(Startup.ServiceProvider);
@@ -46,24 +45,24 @@ namespace simaMovil.Views
             entUser.Focus();
         }
 
-        private async void BtnEntrar_Clicked(object sender, EventArgs e)
-        {            
-            UserModel user = new UserModel(entUser.Text, entPass.Text);                 
+        //private async void BtnEntrar_Clicked(object sender, EventArgs e)
+        //{            
+        //    UserModel user = new UserModel(entUser.Text, entPass.Text);                 
             
-            UserDialogs.Instance.ShowLoading(title: "Autenticando");
-            var result = await ((LoginViewModel)BindingContext).CheckInformation(user);
-            UserDialogs.Instance.HideLoading();
+        //    UserDialogs.Instance.ShowLoading(title: "Autenticando");
+        //    var result = await ((LoginViewModel)BindingContext).CheckInformation(user);
+        //    UserDialogs.Instance.HideLoading();
                         
-            if (result == true)
-            {
-                await DisplayAlert("Login", "OK", "Ok");
-                
-            }
-            else
-            {
-                await DisplayAlert("Login", "Usuario o contraseña incorrecta", "Ok");
-            }
-        }
+        //    if (result == true)
+        //    {
+        //        await Shell.Current.GoToAsync("//main");
+
+        //    }
+        //    else
+        //    {
+        //        await DisplayAlert("Login", "Usuario o contraseña incorrecta", "Ok");
+        //    }
+        //}
 
              
 

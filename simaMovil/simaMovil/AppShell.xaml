@@ -1,0 +1,17 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       FlyoutBehavior="Disabled"
+       xmlns:local="clr-namespace:simaMovil.Views"
+       x:Class="simaMovil.AppShell">
+
+    <ShellItem Route="login">
+        <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"/>
+    </ShellItem>
+
+    <TabBar Route="main">
+        <Tab Title="Consultar OC">
+            <ShellContent ContentTemplate="{DataTemplate local:OrdersPage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>

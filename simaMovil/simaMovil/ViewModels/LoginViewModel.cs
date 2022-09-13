@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using simaMovil.Services;
-using simaMovil.Models;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Diagnostics;
-using Xamarin.Essentials;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using AutoMapper;
+using simaMovil.Services;
+using simaMovil.Models;
+using simaMovil.Dtos;
+
+
+
 
 namespace simaMovil.ViewModels
 {
@@ -17,10 +22,12 @@ namespace simaMovil.ViewModels
         
         private readonly IRestService _restService;
         private readonly IMessageService _messageService;
-        public LoginViewModel(IRestService restService, IMessageService messageService)
+        private readonly IMapper _mapperService; 
+        public LoginViewModel(IRestService restService, IMessageService messageService, IMapper mapperService)
         {
             _restService = restService;
             _messageService = messageService;
+            _mapperService = mapperService;
 
             SaveCommand = new Command(async () => await CheckInformation()); 
         }
@@ -35,7 +42,8 @@ namespace simaMovil.ViewModels
 
                 //TODO:ACR.SHOWDIALOGS https://social.msdn.microsoft.com/Forums/en-US/443f5ce9-14d3-48ab-a5fb-8a0d2c75563f/acr-user-dialogs-not-working-on-viewmodel?forum=xamarinforms
 
-                HttpResponseMessage response = await _restService.PostAsync(this, "/token");
+                
+                HttpResponseMessage response = await _restService.PostAsync(_mapperService.Map<UserDto>(this), "/token");
                 
                 if (response.IsSuccessStatusCode)
                 {

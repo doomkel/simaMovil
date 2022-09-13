@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"simaMovil.Android.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
+		"AutoMapper.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",

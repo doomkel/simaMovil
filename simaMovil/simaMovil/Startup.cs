@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Reflection;
+using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using System.Reflection;
 using Xamarin.Essentials;
 using simaMovil.Services;
+using simaMovil.MapperProfiles;
+
 
 namespace simaMovil
 {
@@ -36,8 +39,17 @@ namespace simaMovil
 
         static void ConfigureServices(HostBuilderContext ctx, IServiceCollection services)
         {
+
             services.AddSingleton<IRestService, RestService>();
             services.AddSingleton<IMessageService, MessageService>();
+
+            AutoMapper.IConfigurationProvider config = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<ProjectProfile>();
+            });
+            services.AddSingleton(config);
+            services.AddScoped<IMapper, Mapper>();
+
         }
 
     }

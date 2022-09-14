@@ -11,9 +11,7 @@ using AutoMapper;
 using simaMovil.Services;
 using simaMovil.Models;
 using simaMovil.Dtos;
-
-
-
+using Acr.UserDialogs;
 
 namespace simaMovil.ViewModels
 {
@@ -22,26 +20,29 @@ namespace simaMovil.ViewModels
         
         private readonly IRestService _restService;
         private readonly IMessageService _messageService;
-        private readonly IMapper _mapperService; 
+        private readonly IMapper _mapperService;
         public LoginViewModel(IRestService restService, IMessageService messageService, IMapper mapperService)
         {
             _restService = restService;
             _messageService = messageService;
             _mapperService = mapperService;
 
-            SaveCommand = new Command(async () => await CheckInformation()); 
+            SaveCommand = new Command(async () =>
+            {
+                using (UserDialogs.Instance.Loading("Autenticando"))
+                {
+                    await Login();
+                }                               
+            });
         }
 
         public ICommand SaveCommand { get; set; }
 
-        public async Task CheckInformation()
+        public async Task Login()
         {
             try
             {
-                IsBusy = true;
-
-                //TODO:ACR.SHOWDIALOGS https://social.msdn.microsoft.com/Forums/en-US/443f5ce9-14d3-48ab-a5fb-8a0d2c75563f/acr-user-dialogs-not-working-on-viewmodel?forum=xamarinforms
-
+                IsBusy = true;                               
                 
                 HttpResponseMessage response = await _restService.PostAsync(_mapperService.Map<UserDto>(this), "/token");
                 
@@ -56,7 +57,6 @@ namespace simaMovil.ViewModels
                 {
                     await _messageService.ShowAsync("Usuario o contraseña incorrecta");                    
                 }
-
 
 
             }

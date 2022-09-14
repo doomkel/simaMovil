@@ -4,13 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
-using System.Net.Http.Headers;
-using System.Text.Json;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Xamarin.Essentials;
-using Acr.UserDialogs;
 using simaMovil.Models;
 using simaMovil.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
@@ -43,28 +38,8 @@ namespace simaMovil.Views
             LoginIcon.HeightRequest = 120;
 
             entUser.Focus();
-        }
-
-        //private async void BtnEntrar_Clicked(object sender, EventArgs e)
-        //{            
-        //    UserModel user = new UserModel(entUser.Text, entPass.Text);                 
-            
-        //    UserDialogs.Instance.ShowLoading(title: "Autenticando");
-        //    var result = await ((LoginViewModel)BindingContext).CheckInformation(user);
-        //    UserDialogs.Instance.HideLoading();
-                        
-        //    if (result == true)
-        //    {
-        //        await Shell.Current.GoToAsync("//main");
-
-        //    }
-        //    else
-        //    {
-        //        await DisplayAlert("Login", "Usuario o contraseña incorrecta", "Ok");
-        //    }
-        //}
-
-             
+        }       
+                     
 
         private void EntUser_Completed(object sender, EventArgs e)
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Reflection;
 using AutoMapper;
+using Acr.UserDialogs;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -49,6 +50,9 @@ namespace simaMovil
             });
             services.AddSingleton(config);
             services.AddScoped<IMapper, Mapper>();
+
+            
+
 
         }
 

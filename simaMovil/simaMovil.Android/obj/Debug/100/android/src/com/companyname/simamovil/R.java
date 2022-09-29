@@ -10373,9 +10373,15 @@ public final class R {
     public static final int preference_list_divider_material=0x7f070160;
     public static final int roundedbg=0x7f070161;
     public static final int roundedbgdark=0x7f070162;
-    public static final int test_custom_background=0x7f070163;
-    public static final int tooltip_frame_dark=0x7f070164;
-    public static final int tooltip_frame_light=0x7f070165;
+    public static final int tab_feed=0x7f070163;
+    public static final int tab_image=0x7f070164;
+    public static final int tab_info=0x7f070165;
+    public static final int tab_order=0x7f070166;
+    public static final int tab_sales=0x7f070167;
+    public static final int tab_transfer=0x7f070168;
+    public static final int test_custom_background=0x7f070169;
+    public static final int tooltip_frame_dark=0x7f07016a;
+    public static final int tooltip_frame_light=0x7f07016b;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

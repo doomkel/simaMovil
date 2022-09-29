@@ -22717,13 +22717,31 @@ namespace simaMovil.Droid
 			public const int roundedbgdark = 2131165538;
 			
 			// aapt resource value: 0x7F070163
-			public const int test_custom_background = 2131165539;
+			public const int tab_feed = 2131165539;
 			
 			// aapt resource value: 0x7F070164
-			public const int tooltip_frame_dark = 2131165540;
+			public const int tab_image = 2131165540;
 			
 			// aapt resource value: 0x7F070165
-			public const int tooltip_frame_light = 2131165541;
+			public const int tab_info = 2131165541;
+			
+			// aapt resource value: 0x7F070166
+			public const int tab_order = 2131165542;
+			
+			// aapt resource value: 0x7F070167
+			public const int tab_sales = 2131165543;
+			
+			// aapt resource value: 0x7F070168
+			public const int tab_transfer = 2131165544;
+			
+			// aapt resource value: 0x7F070169
+			public const int test_custom_background = 2131165545;
+			
+			// aapt resource value: 0x7F07016A
+			public const int tooltip_frame_dark = 2131165546;
+			
+			// aapt resource value: 0x7F07016B
+			public const int tooltip_frame_light = 2131165547;
 			
 			static Drawable()
 			{

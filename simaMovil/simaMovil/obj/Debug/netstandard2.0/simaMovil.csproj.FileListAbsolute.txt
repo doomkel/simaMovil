@@ -26,3 +26,6 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\nets
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\simaMovil.pdb
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\OrdersPage.xaml.g.cs
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\ImagesPage.xaml.g.cs
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\SalesInfoPage.xaml.g.cs
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil\obj\Debug\netstandard2.0\Views\TransferReportPage.xaml.g.cs

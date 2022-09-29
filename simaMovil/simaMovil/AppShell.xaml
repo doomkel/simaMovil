@@ -9,8 +9,17 @@
     </ShellItem>
 
     <TabBar Route="main">
-        <Tab Title="Consultar OC">
+        <Tab Title="Info Ventas" Icon="tab_sales.png">
+            <ShellContent ContentTemplate="{DataTemplate local:SalesInfoPage}" />
+        </Tab>
+        <Tab Title="Consultar OC" Icon="tab_order.png">
             <ShellContent ContentTemplate="{DataTemplate local:OrdersPage}" />
+        </Tab>
+        <Tab Title="Imagenes" Icon="tab_image.png">
+            <ShellContent ContentTemplate="{DataTemplate local:ImagesPage}" />
+        </Tab>
+        <Tab Title="Transfer" Icon="tab_transfer.png">
+            <ShellContent ContentTemplate="{DataTemplate local:TransferReportPage}" />
         </Tab>
     </TabBar>
 

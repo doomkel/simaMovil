@@ -766,3 +766,9 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\De
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\androidx\proguard\ac0b611b-c6d6-4b36-af2d-5a28616ed374.cfg
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\androidx\proguard\baa0b96a-d85f-44db-a198-93670152786c.txt
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\androidx\proguard\dc594c02-682d-4f8f-a397-91de8e04eb82.txt
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\drawable\tab_feed.png
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\drawable\tab_info.png
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\drawable\tab_image.png
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\drawable\tab_transfer.png
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\drawable\tab_order.png
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.Android\obj\Debug\100\res\drawable\tab_sales.png

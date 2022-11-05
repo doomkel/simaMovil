@@ -43,6 +43,77 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "DevExpress.XamarinForms.CollectionView/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[22.1.6]",
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Kotlin.StdLib": "1.4.20"
+        },
+        "compile": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Core/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Editors/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": "[22.1.6]",
+          "DevExpress.XamarinForms.Core": "[22.1.6]",
+          "Xamarin.AndroidX.AutoFill": "1.1.0.6",
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Kotlin.StdLib": "1.4.20"
+        },
+        "compile": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.Editors.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.Editors.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Grid/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[22.1.6]",
+          "DevExpress.XamarinForms.Editors": "[22.1.6]",
+          "Xamarin.Forms": "5.0.0.2012",
+          "Xamarin.Kotlin.StdLib": "1.4.20"
+        },
+        "compile": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.Grid.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/DevExpress.Xamarin.Android.Grid.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.Android.dll": {},
+          "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -550,6 +621,91 @@
         },
         "runtime": {
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/20.3.0.48": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/20.3.0.48": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "20.3.0.48",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/20.3.0.48": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/20.3.0.48": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "20.3.0.48",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfDataGrid/20.3.0.48": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "20.3.0.48",
+          "Syncfusion.Xamarin.GridCommon": "20.3.0.48",
+          "Syncfusion.Xamarin.SfComboBox": "20.3.0.48",
+          "Syncfusion.Xamarin.SfNumericTextBox": "20.3.0.48",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Data.Portable.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Data.Portable.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericTextBox/20.3.0.48": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "20.3.0.48",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -1264,6 +1420,21 @@
         },
         "build": {
           "buildTransitive/monoandroid90/Xamarin.AndroidX.AsyncLayoutInflater.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.AutoFill/1.1.0.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.AndroidX.AutoFill.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.AndroidX.AutoFill.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid9.0/Xamarin.AndroidX.AutoFill.targets": {}
         }
       },
       "Xamarin.AndroidX.Browser/1.3.0.6": {
@@ -2613,12 +2784,83 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
+      "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib/1.5.31.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Jetbrains.Annotations": "22.0.0.2",
+          "Xamarin.Kotlin.StdLib.Common": "1.5.31.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets": {}
+        }
+      },
+      "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets": {}
+        }
+      },
       "simaMovil/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Acr.UserDialogs": "7.2.0.564",
           "AutoMapper": "10.0.0",
+          "DevExpress.XamarinForms.Grid": "22.1.6",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.Hosting": "6.0.1",
@@ -2692,6 +2934,82 @@
         "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "DevExpress.XamarinForms.CollectionView/22.1.6": {
+      "sha512": "7SlalHuiU/RdVt1egqgfnjgm8qw6Kq/OYvRH/qdBjzt8tl4GVyy89TDtGzYLBTqz8u0qcV2yzVfpUFDBozOl5Q==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.collectionview/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.collectionview.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.collectionview.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll"
+      ]
+    },
+    "DevExpress.XamarinForms.Core/22.1.6": {
+      "sha512": "EJSdytN1lAzxKvBEEDiG5Qp4TuYa0p6LhbK6yF+CcaAbzXS+TfIwizqcQI+i+Ff6HrbbaBzl/TfRhSAHc0GoVA==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.core/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.core.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.core.nuspec",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.xml",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.xml"
+      ]
+    },
+    "DevExpress.XamarinForms.Editors/22.1.6": {
+      "sha512": "8Jo70R7+2YwxkHQrgWIrg/7Tx87s+TUd66bYRBLMH30uQqPsunWs7GMkoiMKIPueXw/xAYurFMInCnqrnr/5Lw==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.editors/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.editors.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.editors.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.Editors.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Editors.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll"
+      ]
+    },
+    "DevExpress.XamarinForms.Grid/22.1.6": {
+      "sha512": "mdydIBEX0ua1uaPQLqNsnZk7PEgicVej7QEvn0nHfYPhcy0Cs/2yaWNi6EBazHBIKmeExhn+90p9YNzykuecSQ==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.grid/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.grid.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.grid.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.Grid.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.xml",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Grid.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Grid.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Grid.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Grid.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Grid.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Grid.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -3501,6 +3819,213 @@
         "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/20.3.0.48": {
+      "sha512": "kV0BEn3U1hPAKUFXpsUGQnf/fBIwLI1oKT752Rcfom+IanoVxPLiHOXHsDnXY7PSuMijRN6YOn9by3EFL5lnuw==",
+      "type": "package",
+      "path": "syncfusion.licensing/20.3.0.48",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.20.3.0.48.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/20.3.0.48": {
+      "sha512": "mC3EWNV/iPdBjy36Bz4QKl3YWCFjiH6ouloMPsf2hl5htoMA7+ujVkZGWAY4WAOYnxnOIiGerjxrGIFVDMiHEA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/20.3.0.48",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ClearButtonViewVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.20.3.0.48.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.GridCommon/20.3.0.48": {
+      "sha512": "AOey3FhlIsH2ZfwtM4v4gdA/DCHpkhTVd/Lxe65Y/WaYXXMotS6JAZTroW/K5xqS04ikES1ENy91SOFctRNdfw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.gridcommon/20.3.0.48",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/MonoAndroid10.0/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
+        "syncfusion.xamarin.gridcommon.20.3.0.48.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfComboBox/20.3.0.48": {
+      "sha512": "mKV3rhoSlPb5YEgN5AkNUOoFocn6+y3WsM0QDzIto74acFWwWGySL+eXpKQ+tHEx3RIJYv/TgncmlJuOiDPdYg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfcombobox/20.3.0.48",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.XML",
+        "lib/MonoAndroid10.0/Syncfusion.SfComboBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll",
+        "lib/netstandard2.0/Syncfusion.SfComboBox.XForms.XML",
+        "lib/netstandard2.0/Syncfusion.SfComboBox.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfComboBox.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfComboBox.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Properties/Syncfusion.SfComboBox.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Syncfusion.SfComboBox.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Themes/Generic.xaml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/darkthemeimage.png",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
+        "syncfusion.xamarin.sfcombobox.20.3.0.48.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfDataGrid/20.3.0.48": {
+      "sha512": "GnJKDFuN2vGCFFColQcIhZhcxLAvnI7uDY0u5lCpYO+wjPMU5mxWoRLFz4bjROcDAT2zQ/WT19ZWz/s+TtTewg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfdatagrid/20.3.0.48",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.Data.Portable.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Data.Portable.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Data.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.Data.Portable.xml",
+        "lib/Xamarin.Mac/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfDataGrid.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Data.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Data.Portable.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Data.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.Data.Portable.xml",
+        "lib/netstandard2.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Data.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Data.Portable.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/uap10.0/Syncfusion.Data.Portable.dll",
+        "lib/uap10.0/Syncfusion.Data.Portable.xml",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP/Assets/DataGridFontIcon.ttf",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP/Assets/DataPagerFontIcon.ttf",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP/Properties/Syncfusion.SfDataGrid.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP/Syncfusion.SfDataGrid.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP/Themes/Generic.xaml",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.xml",
+        "syncfusion.xamarin.sfdatagrid.20.3.0.48.nupkg.sha512",
+        "syncfusion.xamarin.sfdatagrid.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
+    "Syncfusion.Xamarin.SfNumericTextBox/20.3.0.48": {
+      "sha512": "ebowV235ntng090yBvsWorj2ENGtY0tRMXgXAFMQG8W/yDk0I4WnhaSTSVB+mxEBs7E+6YfxNXR7etOcNdX3bQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfnumerictextbox/20.3.0.48",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.iOS.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.iOS.dll",
+        "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "syncfusion.xamarin.sfnumerictextbox.20.3.0.48.nupkg.sha512",
+        "syncfusion.xamarin.sfnumerictextbox.nuspec",
+        "syncfusion_logo.png"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -4496,6 +5021,23 @@
         "lib/net6.0-android30.0/Xamarin.AndroidX.AsyncLayoutInflater.xml",
         "xamarin.androidx.asynclayoutinflater.1.0.0.8.nupkg.sha512",
         "xamarin.androidx.asynclayoutinflater.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.AutoFill/1.1.0.6": {
+      "sha512": "SaykTozzgEdUbCe1gKukL5Tq0JOZwczTwAve5CikcYXxxr4qz6PWJ1fMbNoG4iXG7ae/86uIqURFR4Mku+Ovtg==",
+      "type": "package",
+      "path": "xamarin.androidx.autofill/1.1.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "aar/androidx.autofill.autofill.aar",
+        "build/monoandroid9.0/Xamarin.AndroidX.AutoFill.targets",
+        "buildTransitive/monoandroid9.0/Xamarin.AndroidX.AutoFill.targets",
+        "lib/monoandroid90/Xamarin.AndroidX.AutoFill.dll",
+        "lib/monoandroid90/Xamarin.AndroidX.AutoFill.pdb",
+        "xamarin.androidx.autofill.1.1.0.6.nupkg.sha512",
+        "xamarin.androidx.autofill.nuspec"
       ]
     },
     "Xamarin.AndroidX.Browser/1.3.0.6": {
@@ -5901,6 +6443,69 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
+    "Xamarin.Jetbrains.Annotations/22.0.0.2": {
+      "sha512": "3LnLpigkzYNE0dZrPI6SZBK9/4M9DIR5P0fqIS6aYa2HX8VJFMZPyGM+rweFMfAb+j2A37jvpjtjuTIXuS3tew==",
+      "type": "package",
+      "path": "xamarin.jetbrains.annotations/22.0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.Jetbrains.Annotations.targets",
+        "build/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets",
+        "buildTransitive/monoandroid90/Xamarin.Jetbrains.Annotations.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets",
+        "jar/org.jetbrains.annotations.jar",
+        "lib/monoandroid90/Xamarin.Jetbrains.Annotations.dll",
+        "lib/monoandroid90/Xamarin.Jetbrains.Annotations.xml",
+        "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll",
+        "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.xml",
+        "xamarin.jetbrains.annotations.22.0.0.2.nupkg.sha512",
+        "xamarin.jetbrains.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib/1.5.31.2": {
+      "sha512": "WbZwXA64yj4P2EpzX0kzB0eVBzvGr1KbQv5Jy2k0bYgK2BIAIhzyYPwhtn4kxwedeqsJYMwHyvEo5lByqw+0/w==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib/1.5.31.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.Kotlin.StdLib.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
+        "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib.jar",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.dll",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.xml",
+        "xamarin.kotlin.stdlib.1.5.31.2.nupkg.sha512",
+        "xamarin.kotlin.stdlib.nuspec"
+      ]
+    },
+    "Xamarin.Kotlin.StdLib.Common/1.5.31.2": {
+      "sha512": "yf6HGis1l0FXIzIvhSPRnVMxegt+ldjXFHUNLjdjrX9RQkRNyBYIZt2mBn7PlbdcN7M5BjE6zAt7/jKVs03SxA==",
+      "type": "package",
+      "path": "xamarin.kotlin.stdlib.common/1.5.31.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "build/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets",
+        "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "buildTransitive/monoandroid90/Xamarin.Kotlin.StdLib.Common.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-common.jar",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.dll",
+        "lib/monoandroid90/Xamarin.Kotlin.StdLib.Common.xml",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll",
+        "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.xml",
+        "xamarin.kotlin.stdlib.common.1.5.31.2.nupkg.sha512",
+        "xamarin.kotlin.stdlib.common.nuspec"
+      ]
+    },
     "simaMovil/1.0.0": {
       "type": "project",
       "path": "../simaMovil/simaMovil.csproj",
@@ -5911,9 +6516,11 @@
     "MonoAndroid,Version=v10.0": [
       "Acr.UserDialogs >= 7.2.0.564",
       "AutoMapper >= 10.0.0",
+      "DevExpress.XamarinForms.Grid >= 22.1.6",
       "Microsoft.Extensions.Configuration >= 6.0.1",
       "Microsoft.Extensions.DependencyInjection >= 6.0.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
+      "Syncfusion.Xamarin.SfDataGrid >= 20.3.0.48",
       "System.IdentityModel.Tokens.Jwt >= 6.22.1",
       "System.Net.Http >= 4.3.4",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
@@ -5924,6 +6531,7 @@
       "Xamarin.AndroidX.MediaRouter >= 1.2.0",
       "Xamarin.AndroidX.Palette >= 1.0.0.5",
       "Xamarin.Forms >= 5.0.0.2515",
+      "Xamarin.Kotlin.StdLib >= 1.5.31.2",
       "simaMovil >= 1.0.0",
       "sqlite-net-pcl >= 1.7.335"
     ]
@@ -5955,7 +6563,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/CCp32RZMFzy3wQjq4z3PwfY7paMJxlViOIJCgoFFOKA5DISpSi/api": {}
       },
       "frameworks": {
         "monoandroid10.0": {
@@ -5978,6 +6587,10 @@
             "target": "Package",
             "version": "[10.0.0, )"
           },
+          "DevExpress.XamarinForms.Grid": {
+            "target": "Package",
+            "version": "[22.1.6, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[6.0.1, )"
@@ -5989,6 +6602,10 @@
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[6.0.1, )"
+          },
+          "Syncfusion.Xamarin.SfDataGrid": {
+            "target": "Package",
+            "version": "[20.3.0.48, )"
           },
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
@@ -6029,6 +6646,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2515, )"
+          },
+          "Xamarin.Kotlin.StdLib": {
+            "target": "Package",
+            "version": "[1.5.31.2, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

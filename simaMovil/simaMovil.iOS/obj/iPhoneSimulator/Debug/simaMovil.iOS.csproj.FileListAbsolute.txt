@@ -176,3 +176,16 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhone
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\System.Diagnostics.EventLog.dll
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\System.Security.Principal.Windows.dll
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\simaMovil.dll.mdb
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\AutoMapper.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Licensing.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Core.XForms.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.GridCommon.Portable.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfComboBox.XForms.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfComboBox.XForms.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.Data.Portable.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfDataGrid.XForms.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfDataGrid.XForms.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericTextBox.XForms.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericTextBox.XForms.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericTextBox.iOS.dll

@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Xamarin.Essentials;
 using simaMovil.Services;
 using simaMovil.MapperProfiles;
+using simaMovil.Repositories;
 
 
 namespace simaMovil
@@ -43,6 +44,7 @@ namespace simaMovil
 
             services.AddSingleton<IRestService, RestService>();
             services.AddSingleton<IMessageService, MessageService>();
+            services.AddSingleton<IUserRepository, UserRepository>();
 
             AutoMapper.IConfigurationProvider config = new MapperConfiguration(cfg =>
             {

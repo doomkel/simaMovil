@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "oSRlVKcHWjVmfSEYFHum08NED7y2dQmahj+Eq2zzYUkq5OagqjoBu65d21j6HfTpJvvhxhiPl6g6tw545uURnQ==",
+  "dgSpecHash": "64rtY6PYLDgZiq1qCPymEvTGrWUFnwPIUdnVY6teL1wqY5FwEzcPWAVlsx47Lxy6buIiKPrZActBWdZUi1dSvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil\\simaMovil.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.collectionview\\22.1.6\\devexpress.xamarinforms.collectionview.22.1.6.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.core\\22.1.6\\devexpress.xamarinforms.core.22.1.6.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.editors\\22.1.6\\devexpress.xamarinforms.editors.22.1.6.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.grid\\22.1.6\\devexpress.xamarinforms.grid.22.1.6.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

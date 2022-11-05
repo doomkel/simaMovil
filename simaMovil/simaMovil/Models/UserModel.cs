@@ -36,8 +36,11 @@ namespace simaMovil.Models
             }
         }
 
-        private bool isbusy;
 
+        public int Perfil { get; set; }
+
+
+        private bool isbusy;
         public bool IsBusy
         {
             get { return isbusy; }
@@ -45,6 +48,7 @@ namespace simaMovil.Models
                 OnPropertyChanged();
             }
         }
+
 
 
     }

@@ -1,28 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using simaMovil.Models;
-using Xamarin.Essentials;
+
 
 namespace simaMovil.Services
 {
     internal class RestService : IRestService
     {
-        
-        public async Task<IEnumerable<object>> GetAllAsync()
+
+        public async Task<HttpResponseMessage> GetAllAsync(string token, string route) 
         {
-            throw new NotImplementedException();
+            
+                var request = new HttpRequestMessage(HttpMethod.Get, Constants.ApiUrl + route);
+                request.Content.Headers.ContentType = new MediaTypeHeaderValue(Constants.ContentType);
+                request.Headers.Authorization = new AuthenticationHeaderValue(Constants.TokenType, token);
+
+#if DEBUG
+
+            HttpClientHandler insecureHandler = InsecureHandler.GetInsecureHandler();
+            HttpClient client = new HttpClient(insecureHandler);
+
+#else
+HttpClient client = new HttpClient();
+#endif
+            HttpResponseMessage response = await client.SendAsync(request);
+
+            return response;
         }
 
-        public async Task<object> GetAsync()
+        public async Task<HttpResponseMessage> GetAsync(string token, string route)
         {
             throw new NotImplementedException();
         }
+        
 
         public async Task<HttpResponseMessage> PostAsync(object item, string route)
         {

@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/CCp32RZMFzy3wQjq4z3PwfY7paMJxlViOIJCgoFFOKA5DISpSi/api": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -51,6 +52,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "DevExpress.XamarinForms.Grid": {
+              "target": "Package",
+              "version": "[22.1.6, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

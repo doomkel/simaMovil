@@ -15,6 +15,7 @@ namespace simaMovil
 
         public App()
         {
+            DevExpress.XamarinForms.DataGrid.Initializer.Init();
             InitializeComponent();
             Startup.Init();
             MainPage = new AppShell();

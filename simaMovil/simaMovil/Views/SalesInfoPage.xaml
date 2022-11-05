@@ -7,6 +7,9 @@
             <Label Text="Reporte de Ventas del Mes"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

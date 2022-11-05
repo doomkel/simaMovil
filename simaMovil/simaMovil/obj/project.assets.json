@@ -24,6 +24,59 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "DevExpress.XamarinForms.CollectionView/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[22.1.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Core/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Editors/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.CollectionView": "[22.1.6]",
+          "DevExpress.XamarinForms.Core": "[22.1.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Grid/22.1.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[22.1.6]",
+          "DevExpress.XamarinForms.Editors": "[22.1.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Grid.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Grid.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -768,6 +821,82 @@
         "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "DevExpress.XamarinForms.CollectionView/22.1.6": {
+      "sha512": "7SlalHuiU/RdVt1egqgfnjgm8qw6Kq/OYvRH/qdBjzt8tl4GVyy89TDtGzYLBTqz8u0qcV2yzVfpUFDBozOl5Q==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.collectionview/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.collectionview.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.collectionview.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.CollectionView.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.CollectionView.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.CollectionView.dll"
+      ]
+    },
+    "DevExpress.XamarinForms.Core/22.1.6": {
+      "sha512": "EJSdytN1lAzxKvBEEDiG5Qp4TuYa0p6LhbK6yF+CcaAbzXS+TfIwizqcQI+i+Ff6HrbbaBzl/TfRhSAHc0GoVA==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.core/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.core.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.core.nuspec",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.xml",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.xml"
+      ]
+    },
+    "DevExpress.XamarinForms.Editors/22.1.6": {
+      "sha512": "8Jo70R7+2YwxkHQrgWIrg/7Tx87s+TUd66bYRBLMH30uQqPsunWs7GMkoiMKIPueXw/xAYurFMInCnqrnr/5Lw==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.editors/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.editors.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.editors.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.Editors.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Editors.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Editors.iOS.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Editors.dll"
+      ]
+    },
+    "DevExpress.XamarinForms.Grid/22.1.6": {
+      "sha512": "mdydIBEX0ua1uaPQLqNsnZk7PEgicVej7QEvn0nHfYPhcy0Cs/2yaWNi6EBazHBIKmeExhn+90p9YNzykuecSQ==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.grid/22.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.grid.22.1.6.nupkg.sha512",
+        "devexpress.xamarinforms.grid.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.Grid.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Grid.xml",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Grid.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Grid.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Grid.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Grid.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Grid.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Grid.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -2558,6 +2687,7 @@
     ".NETStandard,Version=v2.0": [
       "Acr.UserDialogs >= 7.2.0.564",
       "AutoMapper >= 10.0.0",
+      "DevExpress.XamarinForms.Grid >= 22.1.6",
       "Microsoft.Extensions.Configuration >= 6.0.1",
       "Microsoft.Extensions.DependencyInjection >= 6.0.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
@@ -2594,7 +2724,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/CCp32RZMFzy3wQjq4z3PwfY7paMJxlViOIJCgoFFOKA5DISpSi/api": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -2619,6 +2750,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[10.0.0, )"
+          },
+          "DevExpress.XamarinForms.Grid": {
+            "target": "Package",
+            "version": "[22.1.6, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",

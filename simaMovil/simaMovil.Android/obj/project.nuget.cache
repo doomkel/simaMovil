@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "5/clCNfpmSwqd8KFVbtOQnl51qqwYtLV4Qlcbj484k1GFPC/qlSyyHOCYxi6w0CgRNRj/zbyM5oisF8juXBKIw==",
+  "dgSpecHash": "Nr3Ya+UH1lOU4dsPJcTXCmEWboSgWNVUP7UyCMloPi6OrqMVU+C3S2/Au9JHsF/UZQvDKVLUH6f8nId0OUCJvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\source\\repos\\simaMovil\\simaMovil\\simaMovil.Android\\simaMovil.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\andhud\\1.4.3\\andhud.1.4.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.collectionview\\22.1.6\\devexpress.xamarinforms.collectionview.22.1.6.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.core\\22.1.6\\devexpress.xamarinforms.core.22.1.6.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.editors\\22.1.6\\devexpress.xamarinforms.editors.22.1.6.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\devexpress.xamarinforms.grid\\22.1.6\\devexpress.xamarinforms.grid.22.1.6.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
@@ -43,6 +47,12 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.3\\sqlitepclraw.lib.e_sqlite3.android.2.0.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\syncfusion.licensing\\20.3.0.48\\syncfusion.licensing.20.3.0.48.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\syncfusion.xamarin.core\\20.3.0.48\\syncfusion.xamarin.core.20.3.0.48.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\20.3.0.48\\syncfusion.xamarin.gridcommon.20.3.0.48.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\syncfusion.xamarin.sfcombobox\\20.3.0.48\\syncfusion.xamarin.sfcombobox.20.3.0.48.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\syncfusion.xamarin.sfdatagrid\\20.3.0.48\\syncfusion.xamarin.sfdatagrid.20.3.0.48.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\syncfusion.xamarin.sfnumerictextbox\\20.3.0.48\\syncfusion.xamarin.sfnumerictextbox.20.3.0.48.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
@@ -84,6 +94,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.arch.core.common\\2.1.0.11\\xamarin.androidx.arch.core.common.2.1.0.11.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.arch.core.runtime\\2.1.0.11\\xamarin.androidx.arch.core.runtime.2.1.0.11.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.asynclayoutinflater\\1.0.0.8\\xamarin.androidx.asynclayoutinflater.1.0.0.8.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.autofill\\1.1.0.6\\xamarin.androidx.autofill.1.1.0.6.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.browser\\1.3.0.6\\xamarin.androidx.browser.1.3.0.6.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.cardview\\1.0.0.11\\xamarin.androidx.cardview.1.0.0.11.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.androidx.collection\\1.1.0.10\\xamarin.androidx.collection.1.1.0.10.nupkg.sha512",
@@ -134,7 +145,10 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.4\\xamarin.google.android.material.1.4.0.4.nupkg.sha512",
-    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
+    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.jetbrains.annotations\\22.0.0.2\\xamarin.jetbrains.annotations.22.0.0.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.kotlin.stdlib\\1.5.31.2\\xamarin.kotlin.stdlib.1.5.31.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\xamarin.kotlin.stdlib.common\\1.5.31.2\\xamarin.kotlin.stdlib.common.1.5.31.2.nupkg.sha512"
   ],
   "logs": []
 }

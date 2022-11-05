@@ -11,6 +11,7 @@ using AutoMapper;
 using simaMovil.Services;
 using simaMovil.Models;
 using simaMovil.Dtos;
+using simaMovil.Repositories;
 using Acr.UserDialogs;
 
 namespace simaMovil.ViewModels
@@ -21,11 +22,13 @@ namespace simaMovil.ViewModels
         private readonly IRestService _restService;
         private readonly IMessageService _messageService;
         private readonly IMapper _mapperService;
-        public LoginViewModel(IRestService restService, IMessageService messageService, IMapper mapperService)
+        private readonly IUserRepository _userRepository;
+        public LoginViewModel(IRestService restService, IMessageService messageService, IMapper mapperService, IUserRepository userRepository)
         {
             _restService = restService;
             _messageService = messageService;
             _mapperService = mapperService;
+            _userRepository = userRepository;
 
             SaveCommand = new Command(async () =>
             {
@@ -50,7 +53,7 @@ namespace simaMovil.ViewModels
                 {
                     string token = await response.Content.ReadAsStringAsync();
                     Debug.WriteLine(token);
-                    await SecureStorage.SetAsync("tokenExpiration", token);
+                    await _userRepository.SetToken(token);
                     await Shell.Current.GoToAsync("//main");
                 }
                 else

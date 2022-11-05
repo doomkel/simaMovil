@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
-using Microsoft.Extensions.DependencyInjection;
+using simaMovil.Models;
+
 
 namespace simaMovil.Services
 {
     internal interface IRestService
     {
-        Task<IEnumerable<object>>  GetAllAsync();
-        Task<object> GetAsync();
+        Task<HttpResponseMessage> GetAllAsync(string token, string route);
+        Task<HttpResponseMessage> GetAsync(string token, string route);
         Task<HttpResponseMessage> PostAsync(object item,string route);
 
     }

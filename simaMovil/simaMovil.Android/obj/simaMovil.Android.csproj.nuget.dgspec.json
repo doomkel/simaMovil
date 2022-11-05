@@ -27,7 +27,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/CCp32RZMFzy3wQjq4z3PwfY7paMJxlViOIJCgoFFOKA5DISpSi/api": {}
         },
         "frameworks": {
           "monoandroid10.0": {
@@ -50,6 +51,10 @@
               "target": "Package",
               "version": "[10.0.0, )"
             },
+            "DevExpress.XamarinForms.Grid": {
+              "target": "Package",
+              "version": "[22.1.6, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -61,6 +66,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "Syncfusion.Xamarin.SfDataGrid": {
+              "target": "Package",
+              "version": "[20.3.0.48, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -102,6 +111,10 @@
               "target": "Package",
               "version": "[5.0.0.2515, )"
             },
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.5.31.2, )"
+            },
             "sqlite-net-pcl": {
               "target": "Package",
               "version": "[1.7.335, )"
@@ -132,7 +145,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/CCp32RZMFzy3wQjq4z3PwfY7paMJxlViOIJCgoFFOKA5DISpSi/api": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -157,6 +171,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "DevExpress.XamarinForms.Grid": {
+              "target": "Package",
+              "version": "[22.1.6, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",

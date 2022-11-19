@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using simaMovil.Models;
+using simaMovil.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace simaMovil.Views
 {
@@ -14,6 +18,7 @@ namespace simaMovil.Views
         public SalesInfoPage()
         {
             InitializeComponent();
+            BindingContext = ActivatorUtilities.CreateInstance<SalesInfoViewModel>(Startup.ServiceProvider);
         }
     }
 }

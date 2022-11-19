@@ -189,3 +189,14 @@ C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhone
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericTextBox.XForms.dll
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericTextBox.XForms.iOS.dll
 C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\Syncfusion.SfNumericTextBox.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.Xamarin.iOS.CollectionView.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.CollectionView.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.CollectionView.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.Core.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.Core.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.Xamarin.iOS.Editors.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.Editors.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.Editors.iOS.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.Xamarin.iOS.Grid.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.Grid.dll
+C:\Users\Administrador\source\repos\simaMovil\simaMovil\simaMovil.iOS\bin\iPhoneSimulator\Debug\DevExpress.XamarinForms.Grid.iOS.dll

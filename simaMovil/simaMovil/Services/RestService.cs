@@ -16,9 +16,8 @@ namespace simaMovil.Services
         public async Task<HttpResponseMessage> GetAllAsync(string token, string route) 
         {
             
-                var request = new HttpRequestMessage(HttpMethod.Get, Constants.ApiUrl + route);
-                request.Content.Headers.ContentType = new MediaTypeHeaderValue(Constants.ContentType);
-                request.Headers.Authorization = new AuthenticationHeaderValue(Constants.TokenType, token);
+            var request = new HttpRequestMessage(HttpMethod.Get, Constants.ApiUrl + route);
+            request.Headers.Authorization = new AuthenticationHeaderValue(Constants.TokenType, token);
 
 #if DEBUG
 

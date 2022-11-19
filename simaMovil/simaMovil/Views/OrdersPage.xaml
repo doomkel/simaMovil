@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxg="http://schemas.devexpress.com/xamarin/2014/forms/datagrid"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              x:Class="simaMovil.Views.OrdersPage">
     <ContentPage.Content>
         <StackLayout x:Name="MasterLayout">
@@ -9,8 +8,8 @@
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="CenterAndExpand" />
 
-            <dxg:DataGridView/>
             
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

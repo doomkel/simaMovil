@@ -17,8 +17,12 @@ namespace simaMovil.Views {
     public partial class SalesInfoPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::DevExpress.XamarinForms.DataGrid.DataGridView dgSales;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SalesInfoPage));
+            dgSales = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::DevExpress.XamarinForms.DataGrid.DataGridView>(this, "dgSales");
         }
     }
 }

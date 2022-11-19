@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxg="http://schemas.devexpress.com/xamarin/2014/forms/datagrid"
              x:Class="simaMovil.Views.SalesInfoPage">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Reporte de Ventas del Mes"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            
-            
-            
+
+            <dxg:DataGridView x:Name="dgSales" ItemsSource="{Binding ItemList}">
+
+            </dxg:DataGridView>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

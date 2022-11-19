@@ -7,7 +7,6 @@ namespace simaMovil.Dtos
     internal class UserDto
     {
         public string Usuario { get; set; }
-
         public string Clave { get; set; }
 
     }

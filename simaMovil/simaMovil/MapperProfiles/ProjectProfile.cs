@@ -12,6 +12,10 @@ namespace simaMovil.MapperProfiles
         public ProjectProfile()
         {
             CreateMap<UserModel, UserDto>();
+
+            CreateMap<RepVtaMesDto, RepVtaMesModel>()
+                .ForMember(dest => dest.VentaAP, act => act.MapFrom(src => src.venta2013))
+                .ForMember(dest => dest.VentaAct, act => act.MapFrom(src => src.venta2014));
         }
 
     }

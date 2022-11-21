@@ -9,12 +9,46 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <dxg:DataGridView x:Name="dgSales" ItemsSource="{Binding ItemList}">
+            <dxg:DataGridView x:Name="dgSales" ItemsSource="{Binding ItemList}" RowHeight="40" CalculateCustomSummary="dgSales_CalculateCustomSummary" CustomCellStyle="dgSales_CustomCellStyle" >
+                <dxg:DataGridView.ColumnHeaderStyle>
+                    <dxg:ColumnHeaderStyle BackgroundColor="MediumBlue" BorderColor="#515151" 
+                                   FontSize="10" FontColor="#fff" FontAttributes="Bold" 
+                                   HorizontalLineThickness="2" Padding="10,0,0,0" />
+                </dxg:DataGridView.ColumnHeaderStyle>
+
+                <dxg:TextColumn FieldName="Tienda" Caption="Tda" Width="25" FontSize="10" Padding="10,0,0,0" />
+                <dxg:TextColumn FieldName="Nombre" Width="110" FontSize="10" Padding="10,0,0,0" />
+                <dxg:NumberColumn FieldName="Pzas" Caption="Pz" Width="35" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="N0" />
+                <dxg:NumberColumn FieldName="VentaAct" Caption="Act" Width="60" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="C0" />
+                <dxg:NumberColumn FieldName="VentaAP" Caption="AP" Width="60" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="C0" />
+                <dxg:NumberColumn FieldName="Dif" Width="50" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="C0" />
+                <dxg:NumberColumn FieldName="Ptje" Caption="% Vta" Width="50" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="P2" />
+                <dxg:NumberColumn FieldName="Meta" Width="60" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="C0" />
+                <dxg:NumberColumn FieldName="PtjeMeta" Caption="% Mta" Width="50" FontSize="10" HorizontalContentAlignment="Center" Padding="0" DisplayFormat="P2" />
+
+                <dxg:DataGridView.TotalSummaryStyle>
+                    <dxg:TotalSummaryStyle Padding="2,10" BackgroundColor="Yellow" BorderColor="#515151"
+                                   FontSize="10" FontColor="#000"/>
+                </dxg:DataGridView.TotalSummaryStyle>
+
+                <dxg:DataGridView.TotalSummaries>
+                    <dxg:GridColumnSummary FieldName="Pzas" Type="Sum" 
+                               DisplayFormat="N0"/>
+                    <dxg:GridColumnSummary FieldName="VentaAct" Type="Custom" 
+                               DisplayFormat="C0"/>
+                    <dxg:GridColumnSummary FieldName="VentaAP" Type="Custom" 
+                               DisplayFormat="C0"/>
+                    <dxg:GridColumnSummary FieldName="Dif" Type="Sum" 
+                               DisplayFormat="C0"/>
+                    <dxg:GridColumnSummary FieldName="Ptje" Type="Custom" 
+                               DisplayFormat="P2"/>                    
+                    <dxg:GridColumnSummary FieldName="Meta" Type="Custom" 
+                               DisplayFormat="C0"  />
+                    <dxg:GridColumnSummary FieldName="PtjeMeta" Type="Custom" 
+                               DisplayFormat="P2"/>
+                </dxg:DataGridView.TotalSummaries>
 
             </dxg:DataGridView>
-
-
-
 
         </StackLayout>
     </ContentPage.Content>

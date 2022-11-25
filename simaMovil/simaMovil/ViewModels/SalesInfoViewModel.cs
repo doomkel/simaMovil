@@ -12,6 +12,7 @@ using simaMovil.Models;
 using simaMovil.Services;
 using simaMovil.Repositories;
 
+
 namespace simaMovil.ViewModels
 {
     internal class SalesInfoViewModel : RepVtaMesModel
@@ -33,9 +34,13 @@ namespace simaMovil.ViewModels
 
             using (UserDialogs.Instance.Loading("Obteniendo informacion"))
             {
-               ReportList();
+               ReportList().Await(errorHandler);
             }          
             
+        }
+        private void errorHandler(Exception ex)
+        {
+            _messageService.ShowAsync(ex.Message);
         }
 
         public List<RepVtaMesModel> ItemList
@@ -51,8 +56,9 @@ namespace simaMovil.ViewModels
             }
         }
 
+      
 
-        private async void ReportList()
+        private async Task ReportList()
         {
             try
             {
@@ -83,4 +89,6 @@ namespace simaMovil.ViewModels
             }
         }
     }
+
+    
 }

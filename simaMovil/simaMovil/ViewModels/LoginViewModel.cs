@@ -66,7 +66,7 @@ namespace simaMovil.ViewModels
             catch (Exception ex)
             {
                 Debug.WriteLine(ex);
-                
+                await _messageService.ShowAsync("Error de conexion");
             }
             finally
             {
